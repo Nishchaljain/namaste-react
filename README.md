@@ -20,3 +20,31 @@
 - Error handling
 - Https
 - Tree shaking - remove unused code for u
+
+# There are 2 types of exports/imports:
+
+- 1. Default export/import
+
+- we use default export when we have only 1 thing to export from that file for ex a component file.
+
+- export default Component
+- import Component from "path"
+
+- 2. Named export/import
+
+- we use named export when we have more than 1 thing in that file to export for ex a constant.js file where we kept all the hardcoded - values from different component files.
+- We need to prefix a "export" keyword with the const like
+- export const CDN_URL = "path"
+- export const LOGO_URL = "path"
+
+- while importing a named export, always wrap it inside curly braces like
+- import {CDN-uRL} from "path of the file"
+
+# React Hooks:
+
+- They are normal javascript utility functions
+
+- There are 2 very important hooks
+
+1. useState() -- gives superpowerful state variables in react.
+2. useEffect()
