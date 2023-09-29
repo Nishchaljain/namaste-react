@@ -4,7 +4,6 @@ import { useState, useEffect } from "react";
 import Shimmer from "./Shimmer";
 
 const Body = () => {
-  console.log("Body rendered");
   const [ListOfRestaurents, setListOfRestaurents] = useState([]);
   const [filteredRestaurent, setFilteredRestaurent] = useState([]);
   const [searchText, setSearchText] = useState([]);
@@ -14,7 +13,6 @@ const Body = () => {
   }, []);
 
   const fetchData = async () => {
-    console.log("Fetch data called");
     const data = await fetch(
       "https://www.swiggy.com/dapi/restaurants/list/v5?lat=19.076008&lng=72.8776707&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
     );
